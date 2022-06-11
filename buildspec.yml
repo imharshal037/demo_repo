@@ -9,4 +9,3 @@ phases:
     commands:
     - echo "Deploying to the Lambda"
     - aws lambda update-function-code --function-name  demo_lambda --zip-file fileb://deployment_package.zip
-artifacts:
