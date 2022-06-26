@@ -1,17 +1,21 @@
-AWSTemplateFormatVersion :1 "2010-09-09"
-Transform:'AWS:Serverless-2016-10-31'
+AWSTemplateFormatVersion: "2010-09-09"
 
-Description:>
+Description:
     AWS Demo Lambda.
     
 Resources:
-
     demolambdafuntion:
-        Type: AWS::Serverless::Function
+        Type: AWS::Lambda::Function
         Properties:
-            Description: Demo Lambda
-            FunctionName: demo_sam_lambda.py
-            Handler: lamda_function.lambda_handler
+            FunctionName: demosamlambdaharshal
+            Handler: index.lambda_handler
             Runtime: python3.7
             Timeout: 900
             MemorySize: 3008
+            Role: arn:aws:iam::092625670752:role/lambda_cloud_formation
+            Code:
+                ZipFile: |
+                  def lambda_handler(event, context):
+                    message = 'Hello Lambda World!'
+                    return message
+            
