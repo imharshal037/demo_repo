@@ -4,10 +4,10 @@ Description:
     AWS Demo Lambda.
     
 Resources:
-    demolambdafuntion1:
+    demolambdafuntion:
         Type: AWS::Lambda::Function
         Properties:
-            FunctionName: demosamlambdaharshal2
+            FunctionName: demosamlambdaharshal1
             Handler: index.lambda_handler
             Runtime: python3.7
             Timeout: 900
