@@ -11,7 +11,6 @@ phases:
     - aws cloudformation package --template-file template.yml
     
 artifacts:
-  type: zip
   files:
     -template.yml
  
