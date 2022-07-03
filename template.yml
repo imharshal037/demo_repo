@@ -7,7 +7,7 @@ Resources:
     demolambdafuntion:
         Type: AWS::Lambda::Function
         Properties:
-            FunctionName: demosamlambdaharshal1
+            FunctionName: demosamlambdaharshal2
             Handler: index.lambda_handler
             Runtime: python3.7
             Timeout: 900
