@@ -8,11 +8,12 @@ phases:
   post_build:
     commands:
     - echo "Deploying to the Lambda"
-    - aws cloudformation package --template-file template.yml
+    - aws cloudformation package --template-file template.yml  --s3-bucket $BUCKET --output-template-file outputtemplate.yml
     
 artifacts:
   files:
     -template.yml
+    -outputtemplate.yml
  
     
     
