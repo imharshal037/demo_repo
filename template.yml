@@ -4,7 +4,7 @@ Description:
     AWS Demo Lambda.
     
 Resources:
-    demolambdafuntion:
+    demolambdafuntion1:
         Type: AWS::Lambda::Function
         Properties:
             FunctionName: demosamlambdaharshal2
