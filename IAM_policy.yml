@@ -1,1 +1,11 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description:
+    AWS Demo Lambda.
+    
+Resources:
+    Type: 'AWS::IAM::Role'
+    Properties: {
+    
+    }
 
