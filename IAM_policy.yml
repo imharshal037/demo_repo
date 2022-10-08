@@ -4,8 +4,9 @@ Description:
     AWS Demo Lambda.
     
 Resources:
-    Type: 'AWS::IAM::Role'
-    Properties: {
-    
-    }
+    lambdarole:
+        Type: 'AWS::IAM::Role'
+        Properties: 
+            "Service": "lambda.amazonaws.com"
+        Action: "sts:AssumeRole"
 
