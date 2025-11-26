@@ -6,3 +6,4 @@ b = 20
 c = a + b
 print("Sum of a and b is:", c)
 print("This line is added in local repository")
+print("This is latest changes of remote repository")
